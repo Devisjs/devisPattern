@@ -31,6 +31,7 @@ class devisPattern {
         }
         let res = this.find(path);
         if (res) res.call(this, args, callback);
+        return this;
     }
 
     list() {
