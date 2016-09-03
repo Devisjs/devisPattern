@@ -66,4 +66,30 @@ node-gyp build
 ```
 # The Why
 
-This module lets you build a simple decision tree so you can avoid writing if statements. It tries to make the minimum number of comparisons necessary to pick out the most specific match.
+This addon lets you build a simple decision tree so you can avoid writing if statements. It tries to make the minimum number of comparisons necessary to pick out the most specific match.
+
+# API
+
+### devisPattern
+
+Generates a new pattern matcher instance. Optionally provide a customisation function.
+
+
+### .add( {...pattern...}, object )
+
+Register a pattern, and the object that will be returned if an input
+matches.  Both keys and values are considered to be strings. Other
+types are converted to strings.
+
+### .find( {...subject...})
+
+Return the unique match for this subject, or null if not found. 
+
+### .call({...pattern...},{...arguments...},callback)
+
+Return result for this subject.
+
+### .list( )
+
+Return the list of registered patterns that contain this partial
+pattern.
