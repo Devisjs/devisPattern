@@ -94,11 +94,8 @@ namespace devisPattern {
     
     int TFind(const TStrStrMap& map, const string& path) {
         auto i = FindPath(map, path);
-        if (i != map.end())
-        {
-           
-            return i->second;
-        }
+        if (i != map.end()) return i->second;
+        
         return -1 ;
     }
     
@@ -107,8 +104,7 @@ namespace devisPattern {
         int data;
         v8::String::Utf8Value _path(args[0]->ToString());
         data=TFind(tMap, *_path);
-        /*Local< Function > res;
-        res=Local<Function>::New(Isolate::GetCurrent(),data);*/
+
         args.GetReturnValue().Set(data);
     }
     
@@ -116,15 +112,15 @@ namespace devisPattern {
     {
         Isolate* isolate=Isolate::GetCurrent();
         string s=liste(tMap);
+        
         args.GetReturnValue().Set(String::NewFromUtf8(isolate, liste(tMap).c_str()));
     }
     
     void devisPattern::add(const FunctionCallbackInfo<Value>& args) {
         auto id=args[1]->Int32Value();
         v8::String::Utf8Value _path(args[0]->ToString());
-        //cout<<obj->IsFunction()<<endl;
+
         tMap.insert(TStrStrPair(*_path,id));
-        //args.GetReturnValue().Set(obj);
     }
     
 }  
