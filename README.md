@@ -64,3 +64,6 @@ Now you will have either a `Makefile` (on Unix platforms) or a `vcxproj` file (o
 ```sh
 node-gyp build
 ```
+# The Why
+
+This module lets you build a simple decision tree so you can avoid writing if statements. It tries to make the minimum number of comparisons necessary to pick out the most specific match.
