@@ -72,7 +72,7 @@ This addon lets you build a simple decision tree so you can avoid writing if sta
 
 ### devisPattern
 
-Generates a new pattern matcher instance. Optionally provide a customisation function.
+Generates a new pattern matcher instance. 
 
 
 ### .add( {...pattern...}, object )
