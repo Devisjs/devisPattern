@@ -22,7 +22,7 @@ devisPattern.add({
 devisPattern.add({
     action: 'game',
     cmd: 'pause'
-}, function(args, done) {
+}, (args, done)=> {
 
     done({
         result: 'pause'
