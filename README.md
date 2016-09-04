@@ -1,7 +1,9 @@
 <img src="http://gdurl.com/PeQp" width="550"/>
->A fast pattern matcher addon on JavaScript object properties.
+
 
 # devisPattern
+>A fast pattern matcher addon on JavaScript object properties.
+
 This addon is used by the devis framework to pattern match actions.
 
 ### Quick example
