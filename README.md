@@ -81,13 +81,13 @@ Register a pattern, and the object that will be returned if an input
 matches.  Both keys and values are considered to be strings. Other
 types are converted to strings.
 
-### .find( {...subject...})
+### .find( {...pattern...})
 
-Return the unique match for this subject, or null if not found. 
+Return the unique match for this pattern, or null if not found. 
 
 ### .call({...pattern...},{...arguments...},callback)
 
-Return result for this subject.
+Act this pattern.
 
 ### .list( )
 
