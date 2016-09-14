@@ -54,7 +54,7 @@ devisPattern.call({
 ## Install
 
 ```sh
-npm install patrun
+npm install devisPattern
 ```
 Or, if you download the project:
 
