@@ -4,6 +4,10 @@
 # devisPattern
 >A fast native pattern matcher addon on JavaScript object properties.
 
+It's necessary, before using DevisPattern to install:
+* python v2.7, and make a c ++ compiler like gcc under **unix / linux-gnu** and install more xcode with command line tools if you are under **mac os**
+
+* on **Windows**: Install all the required tools and configurations using Microsoft's windows-build-tools using ```npm install --global --production windows-build-tools``` from an elevated PowerShell or CMD.exe (run as Administrator).
 This addon is used by the devis framework to pattern match actions.
 
 ### Quick example
