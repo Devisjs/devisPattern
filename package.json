@@ -1,0 +1,26 @@
+{
+  "name": "devisPattern",
+  "version": "0.2.1",
+  "description": "A fast native pattern matcher addon on JavaScript object properties ",
+  "homepage": "https://github.com/Devisjs/devisPattern",
+  "keywords": [
+    "pattern",
+    "matcher",
+    "object",
+    "property",
+    "json"
+  ],
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/Devisjs/devisPattern.git"
+},
+  "main": "devisPattern.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ismail reida",
+  "license": "MIT",
+  "dependencies": {
+    
+  }
+}
