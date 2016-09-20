@@ -6,7 +6,7 @@
                             "addon.cpp",
                             "devisPattern.cpp"
                             ],
-      "cflags" : [ "-std=c++1", "-stdlib=libc++" ],
+      "cflags" : [ "-std=c++11"],
       "cflags!": [ '-fno-exceptions' ],
       "cflags_cc!": [ '-fno-exceptions' ],
 "conditions": [
