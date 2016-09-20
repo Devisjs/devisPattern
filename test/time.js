@@ -20,11 +20,11 @@ class date{
   }
   max()
   {
-    return Math.max(...this.end);
+    //return Math.max(...this.end);
   }
   min()
   {
-    return Math.min(...this.end);
+    //return Math.min(...this.end);
   }
   moyenne()
   {

@@ -2,7 +2,7 @@
 const devisPattern = require("../devisPattern");
 const date = require("./time");
 
-let i;
+let i,j;
 let LIMIT = 2900;
 for (i = 0; i < LIMIT; i++) {
     date.time(i);
