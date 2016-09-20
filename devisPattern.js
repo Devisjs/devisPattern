@@ -1,3 +1,4 @@
+"use strict";
 const addon = require('./build/Release/addon');
 const obj = new addon.devisPattern();
 
