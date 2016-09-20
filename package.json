@@ -1,6 +1,6 @@
 {
   "name": "devisPattern",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "A fast native pattern matcher addon on JavaScript object properties ",
   "homepage": "https://github.com/Devisjs/devisPattern",
   "keywords": [
