@@ -1,4 +1,6 @@
-<img src="http://gdurl.com/PeQp" width="550"/>
+# DevisPattern
+
+<img src="https://d13yacurqjgara.cloudfront.net/users/506824/screenshots/1824942/d.gif" width="250"/>
 
 <p align="center">
   <a href="https://circleci.com/gh/Devisjs/devis/tree/master"><img src="https://img.shields.io/circleci/project/Devisjs/devisPattern/master.svg" alt="Build Status"></a>
@@ -7,7 +9,7 @@
   <br>
 
 </p>
-# devisPattern
+
 >A fast native pattern matcher addon on JavaScript object properties.
 
 It's necessary, before using DevisPattern to install:
