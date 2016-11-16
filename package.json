@@ -1,5 +1,5 @@
 {
-  "name": "devisPattern",
+  "name": "devispatterncmake",
   "version": "0.2.1",
   "description": "A fast native pattern matcher addon on JavaScript object properties ",
   "homepage": "https://github.com/Devisjs/devisPattern",
@@ -11,16 +11,18 @@
     "json"
   ],
   "repository": {
-  "type": "git",
-  "url": "git://github.com/Devisjs/devisPattern.git"
-},
+    "type": "git",
+    "url": "git://github.com/Devisjs/devisPattern.git"
+  },
   "main": "devisPattern.js",
   "scripts": {
-    "test": "node test/devisPattern.js"
+    "test": "node test/devisPattern.js",
+    "install":"cmake-js compile"
   },
   "author": "ismail reida",
   "license": "MIT",
   "dependencies": {
-
+    "cmake-js": "^3.3.1",
+    "nan": "^2.4.0"
   }
 }
