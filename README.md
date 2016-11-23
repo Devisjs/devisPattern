@@ -16,12 +16,39 @@
 
 >A fast native pattern matcher addon on JavaScript object properties.
 
-It's necessary, before using DevisPattern to install:
-* python v2.7, and make a c ++ compiler like gcc under **unix / linux-gnu** and install more xcode with command line tools if you are under **mac os**
-
-* on **Windows**: Install all the required tools and configurations using Microsoft's windows-build-tools using ```npm install --global --production windows-build-tools``` from an elevated PowerShell or CMD.exe (run as Administrator).
 
 This addon is used by the devis framework to pattern match actions.
+
+**Requirements:**
+
+It's necessary, before using DevisPattern to install:
+- [CMake](http://www.cmake.org/download/)
+- A proper C/C++ compiler toolchain of the given platform
+    - **Windows**:
+        - [Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools)
+        or a recent version of Visual C++ will do ([the free Community](https://www.visualstudio.com/products/visual-studio-community-vs) version works well)             
+    - **Unix/linux-gnu**:
+        - Clang or GCC
+        - Ninja or Make (Ninja will be picked if both present)
+        - Install more xcode with command line tools if you are under **mac os**
+
+
+
+## Install
+
+```sh
+npm install devisPattern
+```
+Or, if you download the project:
+
+Generate the appropriate project build files for the current platform. Use `configure` for that:
+```sh
+node-gyp configure
+```
+Now you will have either a `Makefile` (on Unix platforms) or a `vcxproj` file (on Windows) in the `build/` directory. Next invoke the build command:
+```sh
+node-gyp build
+```
 
 ### Quick example
 Here's how you register some patterns, and then search for matches:
@@ -68,21 +95,7 @@ devisPattern.call({
 
 ```
 
-## Install
 
-```sh
-npm install devisPattern
-```
-Or, if you download the project:
-
-Generate the appropriate project build files for the current platform. Use `configure` for that:
-```sh
-node-gyp configure
-```
-Now you will have either a `Makefile` (on Unix platforms) or a `vcxproj` file (on Windows) in the `build/` directory. Next invoke the build command:
-```sh
-node-gyp build
-```
 # The Why
 
 This addon lets you build a simple decision tree so you can avoid writing if statements. It tries to make the minimum number of comparisons necessary to pick out the most specific match.
