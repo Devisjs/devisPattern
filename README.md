@@ -10,9 +10,12 @@
   <a href="https://www.bithound.io/github/Devisjs/devisPattern"><img src="https://www.bithound.io/github/Devisjs/devisPattern/badges/score.svg" alt="bitHound Overall Score"></a>
   
   <a href="https://www.bithound.io/github/Devisjs/devisPattern"><img src="https://www.bithound.io/github/Devisjs/devisPattern/badges/code.svg" alt="bitHound Overall Score"></a>
+  <a href="https://travis-ci.org/Devisjs/devisPattern"><img src="https://travis-ci.org/Devisjs/devisPattern.svg?branch=master" alt="travis"></a>
+  
   <br>
 
 </p>
+
 
 >A fast native pattern matcher addon on JavaScript object properties.
 
