@@ -1,3 +1,4 @@
+/* Copyright (c) 2016 Devis, MIT License */
 #ifndef DEVISPATTERN_H
 #define DEVISPATTERN_H
 
