@@ -1,3 +1,4 @@
+/* Copyright (c) 2016 Devis, MIT License */
 #include "node.h"
 #include "devisPattern.hpp"
 
