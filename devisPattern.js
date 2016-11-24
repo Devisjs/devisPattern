@@ -1,3 +1,4 @@
+/* Copyright (c) 2016 Devis, MIT License */
 "use strict";
 const addon = require('./build/Release/addon');
 const obj = new addon.devisPattern();
