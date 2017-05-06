@@ -1,7 +1,69 @@
 {
-  "name": "devisPattern",
-  "version": "1.0.2",
+  "_args": [
+    [
+      {
+        "raw": "devisPattern@^1.1.0",
+        "scope": null,
+        "escapedName": "devisPattern",
+        "name": "devisPattern",
+        "rawSpec": "^1.1.0",
+        "spec": ">=1.1.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/ismail/Downloads/devis-master"
+    ]
+  ],
+  "_from": "devisPattern@>=1.1.0 <2.0.0",
+  "_id": "devisPattern@1.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/devisPattern",
+  "_nodeVersion": "6.4.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/devisPattern-1.0.2.tgz_1480005774133_0.2085645659826696"
+  },
+  "_npmUser": {
+    "name": "ismailrei",
+    "email": "ismailrei@gmail.com"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "devisPattern@^1.1.0",
+    "scope": null,
+    "escapedName": "devisPattern",
+    "name": "devisPattern",
+    "rawSpec": "^1.1.0",
+    "spec": ">=1.1.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/devisPattern/-/devisPattern-1.0.2.tgz",
+  "_shasum": "4f45ba61e16f12a2afcc42565411d6d17b5f60e8",
+  "_shrinkwrap": null,
+  "_spec": "devisPattern@^1.0.1",
+  "_where": "/Users/ismail/Downloads/devis-master",
+  "author": {
+    "name": "ismail reida"
+  },
+  "bugs": {
+    "url": "https://github.com/Devisjs/devisPattern/issues"
+  },
+  "dependencies": {
+    "cmake-js": "^3.3.1",
+    "nan": "^2.4.0"
+  },
   "description": "A fast native pattern matcher addon on JavaScript object properties ",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "4f45ba61e16f12a2afcc42565411d6d17b5f60e8",
+    "tarball": "https://registry.npmjs.org/devisPattern/-/devisPattern-1.0.2.tgz"
+  },
+  "gitHead": "8b470250f60a98cfc737752bcc5657696b2fa086",
   "homepage": "https://github.com/Devisjs/devisPattern",
   "keywords": [
     "pattern",
@@ -10,19 +72,24 @@
     "property",
     "json"
   ],
+  "license": "MIT",
+  "main": "devisPattern.js",
+  "maintainers": [
+    {
+      "name": "ismailrei",
+      "email": "ismailrei@gmail.com"
+    }
+  ],
+  "name": "devisPattern",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git://github.com/Devisjs/devisPattern.git"
   },
-  "main": "devisPattern.js",
   "scripts": {
-    "test": "node test/devisPattern.js",
-    "install":"cmake-js compile"
+    "install": "cmake-js compile",
+    "test": "node test/devisPattern.js"
   },
-  "author": "ismail reida",
-  "license": "MIT",
-  "dependencies": {
-    "cmake-js": "^3.3.1",
-    "nan": "^2.4.0"
-  }
+  "version": "1.0.2"
 }

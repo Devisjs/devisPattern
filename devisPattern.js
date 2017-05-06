@@ -40,4 +40,4 @@ class devisPattern {
     }
 
 }
-module.exports = new devisPattern();
+module.exports = devisPattern;
