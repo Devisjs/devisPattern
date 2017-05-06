@@ -1,5 +1,6 @@
 "use strict";
-const devisPattern = require("../devisPattern");
+const devisP = require("devisPattern"),
+    devisPattern=new devisP();
 const date = require("./time");
 
 let i,j;
