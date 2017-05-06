@@ -1,0 +1,140 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Volumes/Is/workplace/devisPattern',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/ismail/.npm/devisPattern/1.0.2/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/ismail/.npm correctMkdir not in flight; initializing
+10 info lifecycle devisPattern@1.0.2~prepublish: devisPattern@1.0.2
+11 silly lifecycle devisPattern@1.0.2~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/ismail/.npm/devisPattern/1.0.2/package.tgz',
+12 verbose tar pack   '/Volumes/Is/workplace/devisPattern' ]
+13 verbose tarball /Users/ismail/.npm/devisPattern/1.0.2/package.tgz
+14 verbose folder /Volumes/Is/workplace/devisPattern
+15 verbose addLocalTarball adding from inside cache /Users/ismail/.npm/devisPattern/1.0.2/package.tgz
+16 verbose correctMkdir /Users/ismail/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd devisPattern@1.0.2
+18 verbose afterAdd /Users/ismail/.npm/devisPattern/1.0.2/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/ismail/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/ismail/.npm/devisPattern/1.0.2/package/package.json written
+21 silly publish { _args: [ [ [Object], '/Users/ismail/Downloads/devis-master' ] ],
+21 silly publish   _from: '.',
+21 silly publish   _id: 'devisPattern@1.0.2',
+21 silly publish   _inCache: true,
+21 silly publish   _installable: true,
+21 silly publish   _location: '/devisPattern',
+21 silly publish   _nodeVersion: '6.4.0',
+21 silly publish   _npmOperationalInternal:
+21 silly publish    { host: 'packages-12-west.internal.npmjs.com',
+21 silly publish      tmp: 'tmp/devisPattern-1.0.2.tgz_1480005774133_0.2085645659826696' },
+21 silly publish   _npmUser: { name: 'ismailrei', email: 'ismailrei@gmail.com' },
+21 silly publish   _npmVersion: '3.10.3',
+21 silly publish   _phantomChildren: {},
+21 silly publish   _requested:
+21 silly publish    { raw: 'devisPattern@^1.1.0',
+21 silly publish      scope: null,
+21 silly publish      escapedName: 'devisPattern',
+21 silly publish      name: 'devisPattern',
+21 silly publish      rawSpec: '^1.1.0',
+21 silly publish      spec: '>=1.1.0 <2.0.0',
+21 silly publish      type: 'range' },
+21 silly publish   _requiredBy: [ '/' ],
+21 silly publish   _resolved: 'https://registry.npmjs.org/devisPattern/-/devisPattern-1.0.2.tgz',
+21 silly publish   _shasum: '0f83766f9265c3255eb3840523f257dff0fd09e3',
+21 silly publish   _shrinkwrap: null,
+21 silly publish   _spec: 'devisPattern@^1.0.1',
+21 silly publish   _where: '/Users/ismail/Downloads/devis-master',
+21 silly publish   author: { name: 'ismail reida' },
+21 silly publish   bugs: { url: 'https://github.com/Devisjs/devisPattern/issues' },
+21 silly publish   dependencies: { 'cmake-js': '^3.3.1', nan: '^2.4.0' },
+21 silly publish   description: 'A fast native pattern matcher addon on JavaScript object properties ',
+21 silly publish   devDependencies: {},
+21 silly publish   directories: {},
+21 silly publish   dist:
+21 silly publish    { shasum: '4f45ba61e16f12a2afcc42565411d6d17b5f60e8',
+21 silly publish      tarball: 'https://registry.npmjs.org/devisPattern/-/devisPattern-1.0.2.tgz' },
+21 silly publish   gitHead: '8b470250f60a98cfc737752bcc5657696b2fa086',
+21 silly publish   homepage: 'https://github.com/Devisjs/devisPattern',
+21 silly publish   keywords: [ 'pattern', 'matcher', 'object', 'property', 'json' ],
+21 silly publish   license: 'MIT',
+21 silly publish   main: 'devisPattern.js',
+21 silly publish   maintainers: [ { name: 'ismailrei', email: 'ismailrei@gmail.com' } ],
+21 silly publish   name: 'devisPattern',
+21 silly publish   optionalDependencies: {},
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git://github.com/Devisjs/devisPattern.git' },
+21 silly publish   scripts:
+21 silly publish    { install: 'cmake-js compile',
+21 silly publish      test: 'node test/devisPattern.js' },
+21 silly publish   version: '1.0.2' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name devisPattern
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'devisPattern',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'devisPattern',
+26 silly mapToRegistry   name: 'devisPattern',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/devisPattern
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/ismail/.npm/devisPattern/1.0.2/package.tgz
+30 verbose request uri https://registry.npmjs.org/devisPattern
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 5:24:55 PM
+33 verbose request using bearer token for auth
+34 verbose request id 18c3abee03222d92
+35 http request PUT https://registry.npmjs.org/devisPattern
+36 http 403 https://registry.npmjs.org/devisPattern
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sat, 06 May 2017 15:24:56 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-cdg8723-CDG',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1494084296.543268,VS0,VE1314',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/ismail/.npm/registry.npmjs.org/devisPattern on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.2." : devisPattern
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid devisPattern
+43 verbose cwd /Volumes/Is/workplace/devisPattern
+44 error Darwin 16.6.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.4.0
+47 error npm  v3.10.3
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.2." : devisPattern
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

@@ -91,5 +91,5 @@
     "install": "cmake-js compile",
     "test": "node test/devisPattern.js"
   },
-  "version": "1.0.2"
+  "version": "1.1.0"
 }
