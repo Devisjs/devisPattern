@@ -81,11 +81,12 @@ namespace devisPattern {
 
     string liste(TStrStrMap& tMap)
     {
-        string res="";
+        string res="[";
         for(it_type iterator = tMap.begin(); iterator != tMap.end(); iterator++) {
             if(iterator!=tMap.begin()) res+=",";
-            res+="match:"+iterator->first;
+            res+=iterator->first;
         }
+        res+="]";
         return res;
     }
 
