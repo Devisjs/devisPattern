@@ -110,7 +110,6 @@ namespace devisPattern {
     {
         Isolate* isolate=Isolate::GetCurrent();
         auto ptr = Unwrap<devisPattern>(args.Holder());
-        string s=liste(ptr->tMap);
         args.GetReturnValue().Set(String::NewFromUtf8(isolate, liste(ptr->tMap).c_str()));
     }
 

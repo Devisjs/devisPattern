@@ -1,5 +1,5 @@
 "use strict";
-class date{
+class DateTest{
   constructor()
   {
     this.times=[];
@@ -36,4 +36,4 @@ class date{
     return sum/this.end.length;
   }
 }
-module.exports=new date();
+module.exports=new DateTest();

@@ -1,6 +1,6 @@
 "use strict";
-const devisP = require("../devisPattern"),
-    devisPattern=new devisP();
+const DevisP = require("../devisPattern"),
+    devisPattern=new DevisP();
 const date = require("./time");
 
 let i,j;
@@ -31,7 +31,6 @@ for (j = 0; j < LIMIT; j++) {
         data3: 4 * i,
         data4: 5 * i
     }, (res) => {
-        console.log(res);
         date.timeEnd(i);
 
     });
