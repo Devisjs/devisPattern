@@ -2,19 +2,19 @@
   "_args": [
     [
       {
-        "raw": "devisPattern@^1.2.0",
+        "raw": "devisPattern@^1.2.1",
         "scope": null,
         "escapedName": "devisPattern",
         "name": "devisPattern",
-        "rawSpec": "^1.2.0",
-        "spec": ">=1.2.0 <2.0.0",
+        "rawSpec": "^1.2.1",
+        "spec": ">=1.2.1 <2.0.0",
         "type": "range"
       },
       "/Users/ismail/Downloads/devis-master"
     ]
   ],
-  "_from": "devisPattern@>=1.2.0 <2.0.0",
-  "_id": "devisPattern@1.2.0",
+  "_from": "devisPattern@>=1.2.1 <2.0.0",
+  "_id": "devisPattern@1.2.1",
   "_inCache": true,
   "_installable": true,
   "_location": "/devisPattern",
@@ -30,12 +30,12 @@
   "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "devisPattern@^1.2.0",
+    "raw": "devisPattern@^1.2.1",
     "scope": null,
     "escapedName": "devisPattern",
     "name": "devisPattern",
-    "rawSpec": "^1.2.0",
-    "spec": ">=1.2.0 <2.0.0",
+    "rawSpec": "^1.2.1",
+    "spec": ">=1.2.1 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
@@ -53,8 +53,8 @@
     "url": "https://github.com/Devisjs/devisPattern/issues"
   },
   "dependencies": {
-    "cmake-js": "^3.3.1",
-    "nan": "^2.4.0"
+    "cmake-js": "^3.5.0",
+    "nan": "^2.7.0"
   },
   "description": "A fast native pattern matcher addon on JavaScript object properties ",
   "devDependencies": {},
@@ -91,5 +91,5 @@
     "install": "cmake-js compile",
     "test": "node test/devisPattern.js"
   },
-  "version": "1.2.0"
+  "version": "1.2.1"
 }
