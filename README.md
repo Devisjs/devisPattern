@@ -16,9 +16,6 @@
 </p>
 
 
->A fast native pattern matcher addon on JavaScript object properties.
-
-
 This addon is used by the devis framework to pattern match actions.
 
 **Requirements:**
