@@ -4,7 +4,6 @@
 
 
 <p align="center">
-  <a href="https://circleci.com/gh/Devisjs/devis/tree/master"><img src="https://img.shields.io/circleci/project/Devisjs/devisPattern/master.svg" alt="Build Status"></a>
   <a href="https://www.npmjs.com/package/devisPattern"><img src="https://img.shields.io/npm/v/devisPattern.svg" alt="Version"></a>
   <a href="https://www.npmjs.com/package/devisPattern"><img src="https://img.shields.io/npm/l/devisPattern.svg" alt="License"></a>
   <a href="https://www.bithound.io/github/Devisjs/devisPattern"><img src="https://www.bithound.io/github/Devisjs/devisPattern/badges/score.svg" alt="bitHound Overall Score"></a>
