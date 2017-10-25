@@ -1,13 +1,13 @@
 # DevisPattern
+ <img  src="https://avatars3.githubusercontent.com/u/21971184?v=4&amp;s=200" href="http://devisjs.surge.sh" width="250" />
 
-<img src="https://8zzp5w.dm2302.livefilestore.com/y3mfmEBf29sGXflOWN_Hk0yFy3debRCUbdQiTEuttJh0bAg3axpzhmJspRFdOnaLwKylPPYewtA8M-z1_RO2YgjBkOU75s18kvWdqPeT5z7wXXdjKBu3tPeKu4L_FFGn_R5UKIH6LspIBhy-JMYBVT6vT0GusOzoPkbBdXGxN0rnNk?width=600&height=600&cropmode=none" width="250"/>
+>A fast native pattern matcher addon on JavaScript object properties.
 
 
 <p align="center">
   <a href="https://www.npmjs.com/package/devisPattern"><img src="https://img.shields.io/npm/v/devisPattern.svg" alt="Version"></a>
   <a href="https://www.npmjs.com/package/devisPattern"><img src="https://img.shields.io/npm/l/devisPattern.svg" alt="License"></a>
   <a href="https://www.bithound.io/github/Devisjs/devisPattern"><img src="https://www.bithound.io/github/Devisjs/devisPattern/badges/score.svg" alt="bitHound Overall Score"></a>
-  
   <a href="https://www.bithound.io/github/Devisjs/devisPattern"><img src="https://www.bithound.io/github/Devisjs/devisPattern/badges/code.svg" alt="bitHound Overall Score"></a>
   <a href="https://travis-ci.org/Devisjs/devisPattern"><img src="https://travis-ci.org/Devisjs/devisPattern.svg?branch=master" alt="travis"></a>
   
