@@ -54,7 +54,8 @@
   },
   "dependencies": {
     "cmake-js": "^3.5.0",
-    "nan": "^2.7.0"
+    "nan": "^2.7.0",
+    "snyk": "^1.88.2"
   },
   "description": "A fast native pattern matcher addon on JavaScript object properties ",
   "devDependencies": {},
@@ -89,7 +90,10 @@
   },
   "scripts": {
     "install": "cmake-js compile",
-    "test": "node test/devisPattern.js"
+    "test": "node test/devisPattern.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
-  "version": "1.2.1"
+  "version": "1.2.1",
+  "snyk": true
 }
