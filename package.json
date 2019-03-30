@@ -53,9 +53,9 @@
     "url": "https://github.com/Devisjs/devisPattern/issues"
   },
   "dependencies": {
-    "cmake-js": "^3.5.0",
-    "nan": "^2.7.0",
-    "snyk": "^1.88.2"
+    "cmake-js": "^5.1.0",
+    "nan": "^2.13.2",
+    "snyk": "^1.143.5"
   },
   "description": "A fast native pattern matcher addon on JavaScript object properties ",
   "devDependencies": {},
