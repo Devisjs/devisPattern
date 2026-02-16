@@ -53,7 +53,7 @@
     "url": "https://github.com/Devisjs/devisPattern/issues"
   },
   "dependencies": {
-    "cmake-js": "^3.5.0",
+    "cmake-js": "^6.2.0",
     "nan": "^2.7.0",
     "snyk": "^1.88.2"
   },
