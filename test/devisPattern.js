@@ -67,3 +67,47 @@ test("list returns a JSON array string of registered patterns", () => {
     matcher.add({ cmd: "b", n: 1 }, () => {});
     assert.deepStrictEqual(JSON.parse(matcher.list()), [{ cmd: "a" }, { cmd: "b", n: 1 }]);
 });
+
+test("match returns the handle of an identical pattern with its key count", () => {
+    const matcher = new DevisP();
+    const sum = () => {};
+    matcher.add({ role: "math", cmd: "sum" }, sum);
+    assert.deepStrictEqual(matcher.match({ role: "math", cmd: "sum" }), { handle: sum, size: 2 });
+});
+
+// A caller may send more keys than the handler cares about, such as a version or a tenant.
+test("match resolves a registered pattern contained in a larger one", () => {
+    const matcher = new DevisP();
+    const sum = () => {};
+    matcher.add({ role: "math", cmd: "sum" }, sum);
+    assert.strictEqual(matcher.match({ role: "math", cmd: "sum", version: 2 }).handle, sum);
+    assert.strictEqual(matcher.match({ role: "math" }), null);
+    assert.strictEqual(matcher.match({ role: "math", cmd: "divide" }), null);
+});
+
+// A generic handler must not shadow a specific one, whatever the registration order.
+test("match prefers the pattern with the most keys", () => {
+    const matcher = new DevisP();
+    const any = () => {};
+    const sum = () => {};
+    matcher.add({ role: "math" }, any);
+    matcher.add({ role: "math", cmd: "sum" }, sum);
+    assert.strictEqual(matcher.match({ role: "math", cmd: "sum", x: 1 }).handle, sum);
+    assert.strictEqual(matcher.match({ role: "math", cmd: "divide" }).handle, any);
+});
+
+test("match keeps the first registered pattern on a tie", () => {
+    const matcher = new DevisP();
+    const byRole = () => {};
+    matcher.add({ role: "math" }, byRole);
+    matcher.add({ cmd: "sum" }, () => {});
+    assert.strictEqual(matcher.match({ role: "math", cmd: "sum" }).handle, byRole);
+});
+
+test("match compares values, not only keys", () => {
+    const matcher = new DevisP();
+    matcher.add({ role: "math", options: { precise: true } }, () => {});
+    assert.notStrictEqual(matcher.match({ role: "math", options: { precise: true } }), null);
+    assert.strictEqual(matcher.match({ role: "math", options: { precise: false } }), null);
+    assert.strictEqual(matcher.match({ role: "1" }), null);
+});

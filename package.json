@@ -1,7 +1,7 @@
 {
   "name": "devisPattern",
-  "version": "2.0.0",
-  "description": "An exact-match pattern matcher on JavaScript object properties",
+  "version": "2.1.0",
+  "description": "An exact and partial pattern matcher on JavaScript object properties",
   "main": "devisPattern.js",
   "files": [
     "devisPattern.js"

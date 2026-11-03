@@ -1,7 +1,7 @@
 # DevisPattern
  <img  src="https://avatars3.githubusercontent.com/u/21971184?v=4&amp;s=200" href="http://devisjs.surge.sh" width="250" />
 
->An exact-match pattern matcher on JavaScript object properties.
+>A pattern matcher on JavaScript object properties.
 
 <p align="center">
   <a href="https://www.npmjs.com/package/devisPattern"><img src="https://img.shields.io/npm/v/devisPattern.svg" alt="Version"></a>
@@ -44,9 +44,20 @@ devisPattern.call({
 
 ## Matching rules
 
-A pattern matches only an identical pattern: same keys, same values, same key order. Patterns are compared by their `JSON.stringify` form, so `{ a: 1, b: 2 }` and `{ b: 2, a: 1 }` are different patterns, and `{ a: 1 }` does not match `{ a: 1, b: 2 }`.
+`find` matches only an identical pattern: same keys, same values, same key order. Patterns are compared by their `JSON.stringify` form, so `{ a: 1, b: 2 }` and `{ b: 2, a: 1 }` are different patterns, and `{ a: 1 }` does not match `{ a: 1, b: 2 }`.
 
 When the same pattern is added twice, the first handler is kept.
+
+`match` is the partial lookup used by Devis 4.1: a registered pattern matches when all its keys appear in the looked-up pattern with the same values. The pattern with the most keys wins, and the first registered wins a tie:
+
+```JavaScript
+devisPattern.add({ role: "math" }, any);
+devisPattern.add({ role: "math", cmd: "sum" }, sum);
+
+devisPattern.match({ role: "math", cmd: "sum", version: 2 }); // { handle: sum, size: 2 }
+devisPattern.match({ role: "math", cmd: "divide" });          // { handle: any, size: 1 }
+devisPattern.match({ cmd: "sum" });                           // null
+```
 
 ## API
 
@@ -61,6 +72,10 @@ Registers a pattern and the handler returned when an identical pattern is looked
 ### .find( {...pattern...} )
 
 Returns the handler registered for this pattern, or `null`.
+
+### .match( {...pattern...} )
+
+Returns `{ handle, size }` for the most specific registered pattern contained in this one, where `size` is its number of keys, or `null`.
 
 ### .call( {...pattern...}, [{...arguments...}], callback )
 
